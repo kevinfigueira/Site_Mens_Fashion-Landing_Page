@@ -34,6 +34,7 @@ body{
     display: flex;
     justify-content: flex-start;
     flex: 1;
+    border: 1px solid red;
 }
 .navigation{
     flex: 2;
@@ -42,6 +43,7 @@ body{
     display: flex;
     justify-content: space-around;
     list-style: none;
+    border: 1px solid red;
 }
 .nav_list > a{
     text-decoration: none;
@@ -92,6 +94,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
+    border: 1px solid red;
 }
 /* ============ SERVICES ===========*/
 .container_services{
@@ -105,6 +108,7 @@ body{
     display: flex;
     align-items: center;
     margin-right: 1.25rem;
+    border: 1px solid red;
 }
 .service_freeShipping i, .service_price i, .service_store i{
     width: 8.25rem;

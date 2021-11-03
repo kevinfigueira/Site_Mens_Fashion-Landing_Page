@@ -225,6 +225,32 @@ body{
 .customer_slide{
     width: 62rem;
     height: 31rem;
-    background-color: #fff;
+    display: flex;
+    position: relative;
+    background-color: #5D3F3D;
+    transition: all .5;
     border: 1px solid red;
+}
+.slide_show{
+    width: 400%;
+    display: flex;
+    border: 1px solid red;
+    overflow: hidden;
+    z-index: 20;
+    transition: all .5;
+}
+.slide:not(:last-child){
+    margin-right: 1rem;
+}
+.slide img{
+    width: 30.5rem;
+    height: 30.8rem;
+    transition: all .5 ease;
+    z-index: -1;
+}
+.customer_content i{
+    cursor: pointer;
+}
+.customer_content i:hover{
+    transform: scale(1.1);
 }

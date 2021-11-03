@@ -4,12 +4,23 @@
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
 }
-header{
-    width: 100%;
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#header, #banner, #services, #feature, #customer{
+    width: 75rem;
     display: flex;
     justify-content: center;
-    background-color: #000;
     border: 1px solid red;
+}
+#services, #customer{
+    background-color: #5D3F3D;
+}
+/* ============== HEADER ==============*/
+#header{
+    background-color: #000;
 }
 .header_container{
     width: 70rem;
@@ -21,7 +32,7 @@ header{
 }
 .logo_brand{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex: 1;
 }
 .navigation{
@@ -42,11 +53,6 @@ header{
     transform: rotate(90deg);
 }
 /* ============ BANNER ===========*/
-.banner{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 .banner_container{
     width: 70rem;
     height: 36.563rem;
@@ -55,7 +61,170 @@ header{
 }
 .banner_info{
     flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.info_text{
+    font-size:5rem;
+    text-transform: uppercase;
+}
+.info_title, .info_subtitle{
+    font-size: 2.8rem;
+}
+.banner_button{
+    border: none;
+    border-radius: none;
+    background-color: #000;
+    color: #fff;
+    width: 19rem;
+    height: 3rem;
+    font-size: 1.25rem;
+    margin: 1.25rem 0;
+    cursor: pointer;
+}
+.validity{
+    font-size: .7rem;
 }
 .banner_img{
     flex: 2;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+/* ============ SERVICES ===========*/
+.container_services{
+    width: 70rem;
+    height: 14.063rem;
+    display: flex;
+    border: 1px solid red;
+}
+.service_freeShipping, .service_price, .service_store{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 1.25rem;
+}
+.service_freeShipping i, .service_price i, .service_store i{
+    width: 8.25rem;
+    height: 6rem;
+    background-color: #fff;
+    color: #5D3F3D;
+    line-height: 6.375rem;
+    text-align: center;
+    margin-right: 1.25rem;
+}
+.freeShipping, .price, .store{
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+.freeShipping h3, .price h3, .store h3{
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.freeShipping p, .price p, .store p{
+    font-family: sans-serif;
+    font-size: .9rem;
+}
+.freeShipping a, .price a, .store a{
+    font-family: sans-serif;
+    font-size: .8rem;
+    color: #fff;
+}
+/* ============= FEATURE ============*/
+.container_feature{
+    width: 70rem;
+    height: 20.25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid red;
+}
+.feature_title, .customer_title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.feature_title::before, .customer_title::before{
+    content: '';
+    width: 27.5rem;
+    height: 1px;
+    display: flex;
+    background-color: #000;
+
+}
+.feature_title::after, .customer_title::after{
+    content: '';
+    width: 27.5rem;
+    height: 1px;
+    display: flex;
+    background-color: #000;
+
+}
+.feature_fashion{
+    flex: 2;
+    display: flex;
+    border: 1px solid red;
+}
+.feature_item{
+    flex: 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid red;
+}
+.feature_item:nth-child(1){
+    background-image: url(../img/fashionista.png);
+}
+.feature_item:nth-child(2){
+    background-image: url(../img/runway.png);
+}
+.feature_item:nth-child(3){
+    background-image: url(../img/logue.png);
+}
+.feature_item:nth-child(4){
+    background-image: url(../img/cq.png);
+}
+/* =============== CUSTOMER ==============*/
+#customer{
+    color: #fff;
+}
+.container_customer{
+    width: 70rem;
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+}
+.customer_title{
+    flex: 1;
+    font-size: 1.5rem;
+    border: 1px solid red;
+}
+.customer_title::before{
+    width: 25rem;
+    background-color: #fff;
+}
+.customer_title::after{
+    width: 25rem;
+    background-color: #fff;
+}
+.customer_content{
+    flex: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+.customer_slide{
+    width: 62rem;
+    height: 31rem;
+    background-color: #fff;
+    border: 1px solid red;
 }

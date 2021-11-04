@@ -179,21 +179,12 @@ body{
 }
 .feature_item{
     flex: 1;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-self: center;
 }
-.feature_item:nth-child(1){
-    background-image: url(../img/fashionista.png);
-}
-.feature_item:nth-child(2){
-    background-image: url(../img/runway.png);
-}
-.feature_item:nth-child(3){
-    background-image: url(../img/logue.png);
-}
-.feature_item:nth-child(4){
-    background-image: url(../img/cq.png);
+.feature_item:nth-child(2) a, .feature_item:nth-child(3) a{
+    margin-left: 2.5rem;
 }
 /* =============== CUSTOMER ==============*/
 #customer{
@@ -209,6 +200,7 @@ body{
 .customer_title{
     flex: 1;
     font-size: 1.5rem;
+    font-weight: 400;
     border: 1px solid red;
 }
 .customer_title::before{
